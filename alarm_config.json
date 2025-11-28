@@ -1,0 +1,165 @@
+[
+
+  {
+    "tag": "Falla_Cierre_Valvula_Suministro_T0",
+    "source": { "type": "HR", "address": 0 },
+    "limits": { "low": 0 },
+    "severity": "Critico",
+    "message": "Falla válvula principal al cierre",
+    "exten": 1002
+  },
+  {
+    "tag": "Nivel_T0_Critico",
+    "source": { "type": "IR", "address": 0 },
+    "limits": { "low": 150, "high": 800 },
+    "severity": "Critico",
+    "message": "Nivel crítico en tanque principal T0",
+    "exten": 1002
+
+    
+  },
+  {
+    "tag": "Flujo_T0_SinSalida",
+    "source": { "type": "IR", "address": 3 },
+    "limits": { "low": 0 },
+    "severity": "Critico",
+    "message": "Falta de salida de flujo del tanque T0",
+    "exten": 1001
+
+  },
+  {
+    "tag": "Proteccion_Valvula_Salida_T0",
+    "source": { "type": "HR", "address": 1 },
+    "limits": { "low": 0 },
+    "severity": "Critico",
+    "message": "Protección: cierre de válvula de salida tanque T0",
+    "exten": 1001
+
+  },
+  {
+    "tag": "Nivel_T1_Critico",
+    "source": { "type": "IR", "address": 1 },
+    "limits": { "low": 150, "high": 800 },
+    "severity": "Critico",
+    "message": "Nivel crítico en tanque T1",
+    "exten": 1002
+  },
+  {
+    "tag": "Proteccion_Valvula_Salida_T1",
+    "source": { "type": "HR", "address": 4 },
+    "limits": { "low": 0 },
+    "severity": "Critico",
+    "message": "Protección: cierre válvula de salida tanque T1",
+    "exten": 1002
+  },
+  {
+    "tag": "Nivel_T2_Critico",
+    "source": { "type": "IR", "address": 2 },
+    "limits": { "low": 150, "high": 800 },
+    "severity": "Critico",
+    "message": "Nivel crítico en tanque T2",
+    "exten": 1002
+  },
+  {
+    "tag": "Proteccion_Valvula_Salida_T2",
+    "source": { "type": "HR", "address": 5 },
+    "limits": { "low": 0 },
+    "severity": "Critico",
+    "message": "Protección: cierre válvula de salida tanque T2",
+    "exten": 1001
+  },
+  {
+    "tag": "Parada_Linea_1_Actuadores_T1",
+    "source": { "type": "CO", "address": 9 },
+    "condition": "=1",
+    "severity": "Critico",
+    "message": "Línea de producción 1 fuera de servicio",
+    "exten": 1001
+  },
+  {
+    "tag": "Parada_Linea_2_Actuadores_T2",
+    "source": { "type": "CO", "address": 10 },
+    "condition": "=1",
+    "severity": "Critico",
+    "message": "Línea de producción 2 fuera de servicio",
+    "exten": 1001
+  },
+
+  {
+    "tag": "Nivel_T0_Inicial",
+    "source": { "type": "IR", "address": 0 },
+    "limits": { "low": 250, "high": 700 },
+    "severity": "Alta",
+    "message": "Nivel fuera de rango en tanque T0",
+    "exten": 1002
+  },
+  {
+    "tag": "Flujo_T0_Bajo",
+    "source": { "type": "IR", "address": 3 },
+    "limits": { "low": 50 },
+    "severity": "Alta",
+    "message": "Bajo flujo en salida tanque T0",
+    "exten": 1002
+
+  },
+  {
+    "tag": "Nivel_T1_Inicial",
+    "source": { "type": "IR", "address": 1 },
+    "limits": { "low": 300, "high": 600 },
+    "severity": "Alta",
+    "message": "Nivel fuera de rango en tanque T1"
+  },
+  {
+    "tag": "Nivel_T2_Inicial",
+    "source": { "type": "IR", "address": 2 },
+    "limits": { "low": 300, "high": 600 },
+    "severity": "Alta",
+    "message": "Nivel fuera de rango en tanque T2"
+  },
+
+
+  {
+    "tag": "Nivel_T0_Alto",
+    "source": { "type": "IR", "address": 0 },
+    "limits": { "high": 500 },
+    "severity": "Media",
+    "message": "Nivel tanque T0 cercano al máximo"
+  },
+  {
+    "tag": "Flujo_T0_Irregular",
+    "source": { "type": "IR", "address": 3 },
+    "limits": { "low": 60, "high": 120 },
+    "severity": "Media",
+    "message": "Variación inusual en flujo del tanque T0"
+  },
+  {
+    "tag": "Vibracion_Bomba_T1",
+    "source": { "type": "HR", "address": 6 },
+    "limits": { "high": 500 },
+    "severity": "Media",
+    "message": "Vibración elevada en bomba asociada a tanque T1"
+  },
+
+
+  {
+    "tag": "Temperatura_Ambiente_Alta",
+    "source": { "type": "IR", "address": 6 },
+    "limits": { "high": 40 },
+    "severity": "Baja",
+    "message": "Temperatura ambiente elevada en sala de control"
+  },
+  {
+    "tag": "Mantenimiento_Pendiente_Valvula_T2",
+    "source": { "type": "CO", "address": 11 },
+    "condition": "=1",
+    "severity": "Baja",
+    "message": "Revisión pendiente de válvula T2"
+  },
+  {
+    "tag": "Registro_Energia_Alto",
+    "source": { "type": "HR", "address": 7 },
+    "limits": { "high": 500 },
+    "severity": "Baja",
+    "message": "Consumo eléctrico del motor en rango alto"
+  }
+]

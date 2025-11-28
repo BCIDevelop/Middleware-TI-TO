@@ -1,0 +1,21 @@
+tag,type,address,severity,message
+Falla_Cierre_Valvula_Suministro_T0,HR,0,Critico,Falla vÃ¡lvula principal al cierre
+Nivel_T0_Critico,IR,0,Critico,Nivel crÃ­tico en tanque principal T0
+Flujo_T0_SinSalida,IR,3,Critico,Falta de salida de flujo del tanque T0
+Proteccion_Valvula_Salida_T0,HR,1,Critico,ProtecciÃ³n: cierre de vÃ¡lvula de salida tanque T0
+Nivel_T1_Critico,IR,1,Critico,Nivel crÃ­tico en tanque T1
+Proteccion_Valvula_Salida_T1,HR,4,Critico,ProtecciÃ³n: cierre vÃ¡lvula de salida tanque T1
+Nivel_T2_Critico,IR,2,Critico,Nivel crÃ­tico en tanque T2
+Proteccion_Valvula_Salida_T2,HR,5,Critico,ProtecciÃ³n: cierre vÃ¡lvula de salida tanque T2
+Parada_Linea_1_Actuadores_T1,CO,9,Critico,LÃ­nea de producciÃ³n 1 fuera de servicio
+Parada_Linea_2_Actuadores_T2,CO,10,Critico,LÃ­nea de producciÃ³n 2 fuera de servicio
+Nivel_T0_Inicial,IR,0,Alta,Nivel fuera de rango en tanque T0
+Flujo_T0_Bajo,IR,3,Alta,Bajo flujo en salida tanque T0
+Nivel_T1_Inicial,IR,1,Alta,Nivel fuera de rango en tanque T1
+Nivel_T2_Inicial,IR,2,Alta,Nivel fuera de rango en tanque T2
+Nivel_T0_Alto,IR,0,Media,Nivel tanque T0 cercano al mÃ¡ximo
+Flujo_T0_Irregular,IR,3,Media,VariaciÃ³n inusual en flujo del tanque T0
+Vibracion_Bomba_T1,HR,6,Media,VibraciÃ³n elevada en bomba asociada a tanque T1
+Temperatura_Ambiente_Alta,IR,6,Baja,Temperatura ambiente elevada en sala de control
+Mantenimiento_Pendiente_Valvula_T2,CO,11,Baja,RevisiÃ³n pendiente de vÃ¡lvula T2
+Registro_Energia_Alto,HR,7,Baja,Consumo elÃ©ctrico del motor en rango alto
